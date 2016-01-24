@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<!-- <script type="text/javascript" src="main.js"></script> -->
+	<script type="text/javascript" src="main_angular.js"></script>
+</head>
+<body>
+	<div class="main-wrap" ng-controller="mycontroller">
+		<header>
+			<nav>
+				<div class="logo"><a href="#">崔汉超</a></div>
+				<ul>
+					<li><a href="#" class="actived">首页</a></li>
+					<li><a href="#">链接2</a></li>
+					<li><a href="#">链接3</a></li>
+					<li><a href="#">链接4</a></li>
+				</ul>
+			</nav>
+			<div id="banner">
+				<div class="inner">
+					<h1>崔汉超</h1>
+					<p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					</p>
+					<button id="loginBtn" ng-click="doLogin()">登陆</button>
+					<div class="more">
+						更多
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="content">
+			<div class="green-section">
+				<div class="wrap">
+					<h2>一个标题</h2>
+					<div class="hr"></div>
+					<div class="sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
+					<div class="icon-group">
+						<span class="icon">item1</span>
+						<span class="icon">item1</span>
+						<span class="icon">item1</span>
+					</div>
+				</div>
+			</div>
+			<div class="gray-section">
+				<div class="artice-preview clr">
+					<div class="img-section">
+						<img src="img/pic01.jpg" alt="" />
+					</div>
+					<div class="text-section">
+						<h2>又一个标题</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodLorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+				<div class="artice-preview clr">
+				<div class="text-section">
+						<h2>又一个标题</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+					</div>
+				<div class="img-section">
+						<img src="img/pic02.jpg" alt="" />
+					</div>
+				
+					
+				</div>
+				<div class="artice-preview clr">
+					<div class="img-section">
+						<img src="img/pic03.jpg" alt="" />
+					</div>
+					<div class="text-section">
+						<h2>又一个标题</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+					</div>
+				</div>
+			</div>
+			<div class="purple-section">
+				<div class="wrap">
+					<h2>又是一个标题</h2>
+					<div class="hr"></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+					<div class="card-group clr">
+						<div class="card">
+							<h3>又一个标题</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+						</div>
+						<div class="card">
+							<h3>又一个标题</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+						</div>
+						<div class="card">
+							<h3>又一个标题</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+						</div>
+						<div class="card">
+							<h3>又一个标题</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+						</div>
+						<div class="card">
+							<h3>又一个标题</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+						</div>
+						<div class="card">
+							<h3>又一个标题</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="wrap">
+				<ul>	
+					<li>item1</li>
+					<li>item1</li>
+					<li>item1</li>
+					<li>item1</li>
+				</ul>
+				<div class="copy">
+					&copy; 崔汉超
+				</div>
+			</div>
+		</footer>
+		<div id="mask" ng-show="maskState.show"></div>
+		<div id="login" ng-show="loginState.show">
+			<div class="login_header">
+				<h2>登 陆</h2>
+				<div>X</div>
+			</div>
+			<div class="login_content_wrap">
+				<form>
+					<table>
+						<tr>
+							<td>用户名 : </td>
+							<td><input type="text"></input></td>
+						</tr>
+						<tr>
+							<td>密  码 ：</td>
+							<td><input type="password"></input></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><button>提交</button></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+	</div>
+	
+</body>
+</html>

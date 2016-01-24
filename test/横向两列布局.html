@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>横向两列布局</title>
+	<style type="text/css">
+	*{
+		margin:0;
+		padding: 0;
+	}
+
+	.wrap {
+		width:960px;
+		margin : 0 auto;
+		background: #00c;
+	}
+
+	.header {
+		width : 100%;
+		background : #ccc;
+	}
+	.mainbody {
+		width : 100%;
+		background : red;
+		overflow: hidden;
+	}
+	.footer {
+		width : 100%;
+		background : green;
+		
+	}
+	.left {
+		width : 800px;
+		height : 200px;
+		background : #999;
+		float: left;
+		margin-right: 20px;
+	}
+	.right {
+		width : 140px;
+		height : 200px;
+		background : #aaa;
+		float : left;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">header</div>
+		<div class="mainbody">
+			<div class="left"></div>
+			<div class="right"></div>
+		</div>
+		<div class="footer">footer</div>
+	</div>
+
+</body>
+</html>

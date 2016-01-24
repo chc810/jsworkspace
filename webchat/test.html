@@ -1,0 +1,29 @@
+<!DOCTYPE html>  
+<html lang="zh-cn">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="008.js"></script>
+	<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			console.info("加载注册事件...");
+			var fn = function(status, data) {
+				$("h2").text(status);
+				console.info("接受到事件的data。。。。。。。。。");
+				console.info(data);
+			}
+			qn.extend.notifyEventHandler = fn;
+		});
+
+	</script>
+	<title>测试</title>
+</head>
+<body>
+
+<h2></h2>
+</body>
+</html>
+
+
+

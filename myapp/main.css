@@ -1,0 +1,291 @@
+ul {
+	margin : 0;
+	padding : 0;
+}
+
+ul li {
+	
+	list-style: none;
+}
+
+a {
+	text-decoration : none;
+}
+div.hr {
+	width : 100%;
+	height: 2px;
+	background: #ccc;
+	margin : 30px auto; 
+}
+
+button {
+	border : 0;
+	background: #12AECA;
+	color: #eee;
+	padding : 10px;
+	border-radius: 3px;
+}
+
+.clr:after {
+	content : '';
+	display: block;
+	clear: both;
+}
+
+header {
+	background: rgba(0,0,0,0.4);
+	color: #fff;
+
+}
+nav {
+	
+	height: 50px;
+}
+
+#banner {
+	
+	height:700px;
+}
+
+nav ul {
+	float : right;
+}
+nav ul li, nav div.logo {
+	display: inline-block;
+	margin : 0 10px;
+	line-height: 50px;
+}
+
+
+nav a {
+	display: inline-block;
+	height: 50px;
+	color: #fff;
+}
+
+#banner .inner h1 {
+	margin:0;
+}
+
+#banner .inner {
+	max-width: 300px;
+	margin : 0 auto;
+	text-align: center;
+	position : relative;
+	top: 160px;
+}
+
+#banner .inner .more {
+	margin-top : 300px;
+}
+
+.sub-title {
+	line-height: 30px;
+}
+
+.logo {
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	padding-left: 10px;
+}
+
+a.actived {
+	border-bottom: 3px solid #fff;
+}
+
+.green-section {
+	color : #fff;
+	background: #0EB5BB;
+	text-align: center;
+	padding : 200px 0;
+}
+
+.green-section .wrap {
+	max-width: 500px;
+	margin : 0 auto;
+}
+
+.green-section h2 {
+	margin :0;
+}
+
+.green-section .hr {
+	background: #26C3C8;
+	width: 60%;
+}
+
+.green-section .icon-group {
+	margin-top: 50px;
+}
+
+.icon-group .icon{
+	display: inline-block;
+	height: 50px;
+	width : 50px;
+	background: #0D9EA3;
+	transform : rotate(45deg);
+	margin :0 10px;
+}
+
+.gray-section {
+	background: rgb(90, 83, 83);
+	color: #fff;
+}
+
+.artice-preview {
+	font-size:  0;             /*不重置字体为0的话，会出现两个artice-preview中间有空隙，是不同字体的line-height导致的？*/
+}
+
+.artice-preview:nth-child(odd) {
+	background-color : rgba(255, 255, 255, 0.1);
+}
+
+.artice-preview .img-section {
+	width: 40%;
+}
+.artice-preview  .text-section {
+	width : 60%;
+	padding : 30px;   
+	font-size : 14px;                 /*此处还可以用position：relative去控制*/
+	box-sizing : border-box;
+}
+
+.artice-preview > div {
+	float: left;
+}
+
+
+.img-section img {
+	width : 100%;        /*必须这么写，不然图片还是显示本来的大小，即使父容器有大小*/
+}
+
+.purple-section {
+	background: #9E0FB5;
+	color: #fff;
+	text-align: center;
+	padding : 100px 0;
+}
+
+.purple-section .wrap {
+	max-width: 1000px;
+	margin : 0 auto;
+
+}
+
+.purple-section .hr {
+	width: 40%;
+}
+
+.card-group {
+	padding : 0 100px;
+	margin : 100px 0 ;
+}
+.card-group .card {
+	width : 50%;
+	height: 200px;
+	float: left;
+	box-sizing : border-box;
+	/*border : 1px solid #fff;*/
+	padding : 50px;
+}
+
+.card-group .card:first-child {
+	background: rgba(0,0,0,0.04);
+}
+.card-group .card:nth-child(2) {
+	background: rgba(0,0,0,0.08);
+}
+.card-group .card:nth-child(3) {
+	background: rgba(0,0,0,0.12);
+}
+.card-group .card:nth-child(4) {
+	background: rgba(0,0,0,0.16);
+}
+.card-group .card:nth-child(5) {
+	background: rgba(0,0,0,0.2);
+}
+.card-group .card:nth-child(6) {
+	background: rgba(0,0,0,0.24);
+}
+footer {
+	background: rgba(0,0,0,0.4);
+}
+
+footer .wrap {
+	max-width: 1000px;
+	text-align: center;
+	margin : 0 auto;
+	padding : 50px 0;
+	color: #fff;
+
+}
+
+footer ul li {
+	display: inline-block;
+	padding : 10px;
+}
+
+.copy {
+	margin-top: 20px;
+}
+
+.main-wrap {
+	background: #444 url(./img/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+}
+
+#mask {
+	position : absolute;
+	top: 0;
+	left: 0;
+	height: 3000px;
+	width: 100%;
+	background: rgba(0,0,0,0.7);
+	z-index: 1000;
+}
+
+#login {
+	position: fixed;
+	z-index: 10001;
+	top: 300px;
+	left : 300px;
+	color: #fff;
+	background: #666;
+	padding :30px;
+}
+
+#login tr {
+	margin : 20px;
+	display: block;
+}
+
+#login tr > td:nth-first{
+	text-align: right;
+}
+
+.login_content_wrap {
+	margin-top:30px;
+}
+
+#login h2 {
+	text-align: center;
+}
+
+.login_header div {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	cursor: pointer;
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.login_header div:hover {
+	background: #aaa;
+}

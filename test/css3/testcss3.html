@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css"/>
+    <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".nav input[type='radio']").click(function(){
+               var $id = $(this).next().attr("href");
+                var  i = $id.substr($id.length - 1, $id.length) - 1;
+                var top = "0";
+//                if (i != 0) {
+//                    top = "translateY(-" + i + "00%" + ")";
+//                } else {
+//                    top="translateY(" + 0 + ")";
+//                }
+//                $(".content-container").css("-webkit-transform", top);
+                if (i != 0) {
+                    top = "-" + i + "00%";
+                } else {
+                    top = 0;
+                }
+                $(".content-container").css("top", top);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <input type="radio" name="nav_set" class="nav_set_1" checked="checked"/>
+            <a href="#panels1">channelsoft</a>
+            <input type="radio" name="nav_set" class="nav_set_2"/>
+            <a href="#panels2">yealink</a>
+            <input type="radio" name="nav_set" class="nav_set_3"/>
+            <a href="#panels3">chinaunicon</a>
+            <input type="radio" name="nav_set" class="nav_set_4"/>
+            <a href="#panels4">hello</a>
+            <input type="radio" name="nav_set" class="nav_set_5"/>
+            <a href="#panels5">fuck</a>
+        </div>
+
+
+        <div class="content-container">
+            <div id="panels1" class="panels">我是内容1</div>
+            <div id="panels2" class="panels">我是内容2</div>
+            <div id="panels3" class="panels">我是内容3</div>
+            <div id="panels4" class="panels">我是内容4</div>
+            <div id="panels5" class="panels">我是内容5</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

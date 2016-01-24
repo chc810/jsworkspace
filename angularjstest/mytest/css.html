@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="cssApp">
+<head>
+	<meta charset="utf-8">
+	<title>css绑定</title>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="css.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+	<style type="text/css">
+		.red {
+			background-color: red;
+		}
+		.green {
+			background-color : green;
+		}
+	</style>
+</head>
+<body>
+
+	<div ng-controller="cssCtrl">
+		<div class="{{color}}">{{message}}</div>
+		<button class="btn btn-primary" ng-click="change()">改变</button>
+	</div>
+	<hr>
+	<div ng-controller="mycssCtrl">
+		<div ng-class="{red:isRed,green : isGreen}">{{message}}</div>
+		<button class="btn btn-primary" ng-click="change()">改变</button>
+	</div>
+	<hr>
+	<div></div>
+</body>
+</html>

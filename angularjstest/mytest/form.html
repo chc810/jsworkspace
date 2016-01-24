@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="formApp">
+<head>
+	<meta charset="utf-8">
+	<title>测试表单的双向绑定</title>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="form.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+</head>
+<body>
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<div class="panel-title">双向数据绑定</div>
+	</div>
+	<div class="panel-body">
+		<div class="row">
+			<div class="col-md-12">
+				<form class="form-horizontal" ng-controller="formCtrl">
+					<div class="form-group" role="form">
+						<label class="col-md-2 control-label">
+							邮箱:
+						</label>
+						<div class="col-md-10 ">
+							<input type="email" class="form-control" ng-model="userInfo.email"></input>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-md-2 control-label">
+							密码:
+						</label>
+						<div class="col-md-10">
+							<input type="password" class="form-control" ng-model="userInfo.pass"></input>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-md-offset-2 col-md-10">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" ng-model="userInfo.autoChecked">自动登陆</input>
+								</label>
+								<!-- <input type="checkbox">自动登陆</input> -->
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-md-offset-2 col-md-10">
+							<button class="btn btn-primary" ng-click="getInfo()">获取Form表单的值</button>
+							<button class="btn btn-default" ng-click="setInfo()">设置Form表单的值</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

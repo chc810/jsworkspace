@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=lH4i65LIhmfygo89DuOTXYsl"></script>
+-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?type=quick&ak=lH4i65LIhmfygo89DuOTXYsl&v=1.0"></script>
+</head>
+<body>
+<div id="allmap" style="height:600px;"></div>
+<script type="text/javascript">
+   var map = new BMap.Map("allmap");
+    var point = new BMap.Point(116.331398,39.897445);
+    map.centerAndZoom(point,12);
+
+    var geolocation = new BMap.Geolocation();  //实例化浏览器定位对象。
+    console.info(geolocation);
+    //下面是getCurrentPosition方法。调用该对象的getCurrentPosition()，与HTML5不同的是，这个方法原型是getCurrentPosition(callback:function[, options: PositionOptions])，也就是说无论成功与否都执行回调函数1，第二个参数是关于位置的选项。 因此能否定位成功需要在回调函数1中自己判断。
+  /*  geolocation.getCurrentPosition(function(r){   //定位结果对象会传递给r变量
+        console.info("efefef.......................");
+       *//* if(this.getStatus() == BMAP_STATUS_SUCCESS){  //通过Geolocation类的getStatus()可以判断是否成功定位。
+            var mk = new BMap.Marker(r.point);    //基于定位的这个点的点位创建marker
+            map.addOverlay(mk);    //将marker作为覆盖物添加到map地图上
+            map.panTo(r.point);   //将地图中心点移动到定位的这个点位置。注意是r.point而不是r对象。
+            alert('您的位置：'+r.point.lng+','+r.point.lat);  //r对象的point属性也是一个对象，这个对象的lng属性表示经度，lat属性表示纬度。
+        }
+        else {
+            alert('failed'+this.getStatus());
+        }*//*
+    });*/
+   geolocation.getCurrentPosition(function(r){
+       console.info("efefef.......................");
+       if(this.getStatus() == BMAP_STATUS_SUCCESS){
+           var mk = new BMap.Marker(r.point);
+           map.addOverlay(mk);
+           map.panTo(r.point);
+           alert('您的位置：'+r.point.lng+','+r.point.lat);
+       }
+       else {
+           alert('failed'+this.getStatus());
+       }
+   })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,397 @@
+@CHARSET "UTF-8";
+
+.qn {
+	font-family: Microsoft Yahei;
+	font-size: 12px;
+	position: absolute;
+	bottom: 40px;
+	right: 52px;
+}
+
+.qn p {
+	margin: 8px;
+}
+
+.qn-icon {
+	height: 40px;
+	width: 40px;
+	background: url("../images/phone_icon.png") no-repeat;
+	position: absolute;
+	right: 10px;
+	bottom: 250px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.qn-icon:hover {
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+}
+
+.qn-hidden {
+	display: none;
+}
+
+.qn-login {
+	height: 240px;
+	width: 330px;
+	background: url("../images/login_bg.png") no-repeat;
+	padding-top: 10px;
+}
+
+.qn-login-main {
+	width: 95%;
+}
+
+.qn-login-button {
+	border: none;
+	background: url("../images/btn_bg.png") no-repeat;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	color: #FFF;
+	cursor: pointer;
+}
+
+.qn-login-button:hover {
+	filter: alpha(opacity=90);
+	opacity: 0.9;
+}
+
+.qn-login-button2 {
+	
+	background-color: #CCC;
+	text-align: center;
+	color: #000;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+
+.qn-login-button2:hover {
+	border: 1px solid #AAA;
+	cursor: pointer;
+	background-color: #EEE;
+}
+
+.qn-message-span {
+	color: #EF4907;
+}
+	
+.qn-logo-all {
+	width: 300px;
+	height: 60px;
+	margin: 0 auto;
+	background: url("../images/logo_all.png") no-repeat;	
+}
+
+.qn-main {
+	height: 330px;
+	width: 330px;
+	background: url("../images/main_bg.png") no-repeat;
+	position: relative;
+}
+
+.qn-tip {
+	width: 150px;
+	min-height: 30px;
+	line-height: 30px;
+	padding: 5px;
+	text-align: center;
+	position: absolute;
+	left: 90px;
+	top: 100px;
+	background-color: #F80;
+	color: #FFF;
+	display: none;
+}
+
+.qn-tip-success {
+	background-color: #5cb85c;
+}
+
+.qn-top {
+	width: 95%;
+	height: 60px;
+}
+
+.qn-top-table {
+	width: 100%;
+	height: 100%;
+}
+
+.qn-top-table tr {
+	height: 100%;
+}
+
+.qn-top-table tr td {
+	width: 20%;
+	text-align: center;
+}
+
+
+.qn-middle {
+	width: 95%;
+	height: 70px;
+	text-align: left;
+}
+
+.qn-middle p {
+	padding-left: 30px;
+}
+
+.qn-bold-text {
+	font-size: 18px;
+	font-weight: bold;
+	color: #F00;
+	background: url("../images/input_bgs_small.png") no-repeat;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	width: 85px;
+}
+
+.qn-input-bg {
+	
+}
+
+.qn-input {
+	width: 180px;
+	border: 1px solid #A9A9A9;
+	background-color: #FFF;
+}
+
+.qn-text-span {
+	height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.qn-number-input {
+	height: 30px;
+	line-height: 30px;
+	background: url("../images/input_bgs_long.png") no-repeat;
+	border: none;
+	font-size: 18px;
+	font-weight: bold;
+	color: #000;
+	width: 170px;
+	padding-left: 10px;
+	outline: 0;
+}
+
+.qn-select-background {
+	background: url("../images/input_bgs_long.png") no-repeat;
+	width: 180px;
+	height: 30px;
+	padding-top: 3px;
+	padding-left: 7px;
+	display: inline-block;
+}
+
+.qn-select-border {
+	*border: 1px solid #FFF;
+	*overflow: hidden;
+	*width: 166px;
+	display: inline-block;
+}
+
+.qn-select {
+	/* width: 180px; */
+	width: 166px;
+	/* height: 30px; */
+	height: 20px;
+	*height: 23px;
+	font-size: 18px;
+	font-weight: bold;
+	/* background: url("../images/input_bgs_long.png") no-repeat; */
+	background: transparent;
+	border: none;
+	line-height: 30px;
+	background-color: #FFF;
+	*margin: -1px;
+	outline: 0;
+}
+
+.qn-command {
+	width: 95%;
+	height: 180px;
+}
+
+.qn-command-table {
+	width: 100%;
+	height: 100%;
+}
+
+.qn-command-table tr {
+	height: 33%;	
+}
+
+.qn-command-table tr td {
+	width: 25%;	
+	text-align: center;
+}
+
+.qn-button {
+	width: 50px;
+	height: 45px;
+	text-align: center;
+	padding-top: 3px;
+	margin: 0 auto;
+}
+
+.qn-button:hover {
+	border: 1px solid #AAA;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.qn-button-disabled {
+	background-color: #AAA;
+}
+
+.qn-button-shadow {
+	background-color: #DDD;
+}
+
+.qn-button-img {
+	width: 40px; 
+	height: 25px; 
+	margin: 0 auto 3px;
+}
+
+.qn-button-img-thin {
+	width: 33px; 
+	height: 30px; 
+	margin: 0 auto;
+}
+
+.qn-button-call {
+	background: url("../images/call.png") no-repeat;
+}
+
+.qn-button-call-disable {
+	background: url("../images/call_disable.png") no-repeat;
+}
+
+.qn-button-hangup {
+	background: url("../images/hangup.png") no-repeat;
+}
+
+.qn-button-hangup-disable {
+	background: url("../images/hangup_disable.png") no-repeat;
+}
+
+.qn-button-ready {
+	background: url("../images/ready.png") no-repeat;
+}
+
+.qn-button-ready-disable {
+	background: url("../images/ready_disable.png") no-repeat;
+}
+
+.qn-button-busy {
+	background: url("../images/busy.png") no-repeat;
+}
+
+.qn-button-busy-disable {
+	background: url("../images/busy_disable.png") no-repeat;
+}
+
+.qn-button-logout {
+	background: url("../images/logout.png") no-repeat;
+}
+
+.qn-button-logout-disable {
+	background: url("../images/logout_disable.png") no-repeat;
+}
+
+.qn-button-keep {
+	background: url("../images/keep.png") no-repeat;
+}
+
+.qn-button-keep-disable {
+	background: url("../images/keep_disable.png") no-repeat;
+}
+
+.qn-button-keep-return {
+	background: url("../images/keep.png") no-repeat;
+}
+
+.qn-button-keep-return-disable {
+	background: url("../images/keep_disable.png") no-repeat;
+}
+
+.qn-button-ivr {
+	background: url("../images/ivr.png") no-repeat;
+}
+
+.qn-button-ivr-disable {
+	background: url("../images/ivr_disable.png") no-repeat;
+}
+
+.qn-button-transfer {
+	background: url("../images/transfer.png") no-repeat;
+}
+
+.qn-button-transfer-disable {
+	background: url("../images/transfer_disable.png") no-repeat;
+}
+
+.qn-button-consult {
+	background: url("../images/consult.png") no-repeat;
+}
+
+.qn-button-consult-disable {
+	background: url("../images/consult_disable.png") no-repeat;
+}
+
+.qn-button-consult-return {
+	background: url("../images/consult_return.png") no-repeat;
+}
+
+.qn-button-consult-return-disable {
+	background: url("../images/consult_return_disable.png") no-repeat;
+}
+
+.qn-button-meeting {
+	background: url("../images/meeting.png") no-repeat;
+}
+
+.qn-button-meeting-disable {
+	background: url("../images/meeting_disable.png") no-repeat;
+}
+
+.qn-button-observe {
+	background: url("../images/observe.png") no-repeat;
+}
+
+.qn-button-observe-disable {
+	background: url("../images/observe_disable.png") no-repeat;
+}
+
+.qn-button-force-insert {
+	background: url("../images/force_insert.png") no-repeat;
+}
+
+.qn-button-force-insert-disable {
+	background: url("../images/force_insert_disable.png") no-repeat;
+}
+
+.qn-button-force-abort {
+	background: url("../images/force_abort.png") no-repeat;
+}
+
+.qn-button-force-abort-disable {
+	background: url("../images/force_abort_disable.png") no-repeat;
+}
+
+.qn-button-reset {
+	background: url("../images/reset.png") no-repeat;
+}
+
+.qn-button-reset-disable {
+	background: url("../images/reset_disable.png") no-repeat;
+}

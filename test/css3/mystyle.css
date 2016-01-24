@@ -1,0 +1,125 @@
+
+body {
+    margin : 0;
+    padding : 0;
+}
+
+div.container {
+    height : 100%;
+    width : 100%;
+    position : absolute;
+    bottom : 0;
+    background-color: antiquewhite;
+    overflow: hidden;
+}
+
+div.nav {
+    position : fixed;
+    height: 40px;
+    width: 100%;
+    bottom : 0;
+    z-index: 10;
+}
+
+
+div.nav > input,
+div.nav > a {
+    position : absolute;
+    width : 20%;
+    height:100%;
+    color : white;
+    background-color: lightblue;
+    line-height: 40px;
+    text-align : center;
+}
+
+div.nav > input {
+    z-index: 9999;
+    opacity: 0;
+    cursor: pointer;
+}
+
+div.nav > input:checked + a,
+div.nav > input:checked:hover + a{
+    background-color: #ff2a6b;
+}
+div.nav > input:hover + a {
+    background-color: aqua;
+}
+
+div.nav > input:checked + a:after {
+    content : "";
+    height : 0;
+    width: 0;
+    overflow: hidden;
+    border: 20px solid transparent;
+    border-bottom-color: #ff2a6b;
+    position:absolute;
+    bottom: 40px;
+    left:50%;
+    margin-left: -20px;
+}
+
+div.nav > a {
+    text-decoration: none;
+    z-index: 10;
+}
+
+div.nav input.nav_set_1,
+div.nav input.nav_set_1 + a
+{
+    left : 0;
+}
+div.nav input.nav_set_2,
+div.nav input.nav_set_2 + a
+{
+    left : 20%;
+}
+
+div.nav input.nav_set_3,
+div.nav input.nav_set_3 + a
+{
+    left : 40%;
+}div.nav input.nav_set_4,
+ div.nav input.nav_set_4 + a
+ {
+     left : 60%;
+ }div.nav input.nav_set_5,
+  div.nav input.nav_set_5 + a
+  {
+      left : 80%;
+  }
+
+div.content-container, div.panels {
+    height : 100%;
+    width :100%;
+    position: relative;
+}
+div.content-container {
+    /*-webkit-transform: translate3D(0,0,0);*/
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    top : 0;
+}
+
+
+/*div.nav input.nav_set_1:checked ~ div.content-container {
+    top:0;
+}
+div.nav input.nav_set_2:checked ~ div.content-container {
+    top:100%;
+}
+div.nav input.nav_set_3:checked ~ div.content-container {
+    top:200%;
+}
+div.nav input.nav_set_4:checked ~ div.content-container {
+    top:300%;
+}
+div.nav input.nav_set_5:checked ~ div.content-container {
+     top:400%;
+}*/
+
+
+
+
+
