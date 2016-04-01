@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+
+.qn-tip {
+	width: 250px;
+	height: 40px;
+	color: #FFF;
+	text-align: center;
+	line-height: 40px;
+	position: fixed;
+	top: -40px;
+}
+
+.qn-tip-success {
+	background-color: #5cb85c;
+}
+
+.qn-tip-warning {
+	background-color: #f0ad4e;
+}
+
+.qn-tip-danger {
+	background-color: #d9534f;
+}
+
+.qn-text-success {
+	color: #5cb85c;
+}
+
+.qn-tab-pane-wrap {
+	padding: 10px;
+}
+
